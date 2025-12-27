@@ -1,5 +1,5 @@
 # facerecogdaa
-#Face Similarity Search Engine
+# Face Similarity Search Engine
 Using Dynamic Programming (DP) and Longest Common Subsequence (LCS)
 #Project Description
 This project implements a Face Similarity Search Engine using OpenCV for face detection and Dynamic Programming–based Longest Common Subsequence (LCS) algorithm for similarity matching.
