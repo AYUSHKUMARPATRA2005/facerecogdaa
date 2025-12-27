@@ -1,11 +1,11 @@
 # facerecogdaa
 # Face Similarity Search Engine
 Using Dynamic Programming (DP) and Longest Common Subsequence (LCS)
-#Project Description
+# Project Description
 This project implements a Face Similarity Search Engine using OpenCV for face detection and Dynamic Programming–based Longest Common Subsequence (LCS) algorithm for similarity matching.
 Instead of traditional machine learning or deep learning models, this system focuses on an algorithmic approach where facial features are represented as sequences and compared using DP + LCS to determine similarity between faces.
 The face with the highest LCS similarity score is returned as the closest match.
-#Working Methodology
+# Working Methodology
 1️⃣ Face Detection
 Convert image to grayscale
 Detect face using Haar Cascade Classifier
@@ -29,18 +29,7 @@ Compute LCS score with all dataset faces
 Normalize similarity score
 Rank faces based on similarity
 Display top match or label as Unknown
-#⏱️ Time & Space Complexity
+# ⏱️ Time & Space Complexity
 LCS Time Complexity: O(n × m)
 Space Complexity: O(n × m)
 Where n and m are lengths of face feature sequences
-#Advantages
-Pure algorithm-based solution
-No training phase required
-Easy to understand and implement
-Lightweight and interpretable
-#Future Scope
-Space-optimized LCS
-Hybrid ML + DP approach
-Better feature extraction (HOG, SIFT)
-Parallel similarity computation
-Integration with database systems
