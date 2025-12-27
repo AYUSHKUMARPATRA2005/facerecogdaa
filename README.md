@@ -10,12 +10,14 @@ The face with the highest LCS similarity score is returned as the closest match.
 Convert image to grayscale
 Detect face using Haar Cascade Classifier
 Crop the detected face (ROI)
+
 2️⃣ Feature Extraction
 Resize face to a fixed dimension
 Extract pixel intensity / edge-based values
 Convert extracted values into a 1D sequence
 Face A → [122, 119, 121, 130, 128]
 Face B → [120, 119, 121, 129, 127]
+
 3️⃣ Dynamic Programming + LCS
 LCS is computed using DP table
 Each stored face sequence is compared with input sequence
@@ -24,11 +26,13 @@ if X[i] == Y[j]:
     dp[i][j] = 1 + dp[i-1][j-1]
 else:
     dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+
 4️⃣ Similarity Search
 Compute LCS score with all dataset faces
 Normalize similarity score
 Rank faces based on similarity
 Display top match or label as Unknown
+
 # ⏱️ Time & Space Complexity
 LCS Time Complexity: O(n × m)
 Space Complexity: O(n × m)
